@@ -1,0 +1,100 @@
+:root {
+    --main-bgcolor: #000000;
+    --primary-acc-light: #8E05C2;
+    --primary-acc-medium: #700B97;
+    --primary-acc-dark: #3E065F;
+    --text-primary: #FFFFFF;
+}
+
+#main {
+    background-color: var(--main-bgcolor);
+}
+
+#head-text {
+    text-align: center;
+    font-family: monospace;
+    font-size: 26pt;
+    color: var(--primary-acc-light);
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#subhead-text {
+    margin-top: 2pt;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20pt;
+    color: var(--primary-acc-light);
+    font-weight: lighter;
+}
+
+.main-box {
+    position: relative;
+    margin-top: 72pt;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.main-box label {
+    font-family: monospace;
+    color: var(--text-primary);
+    font-size: 12pt;
+    margin-right: 8pt;
+}
+
+.main-box .first-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#macaddr-tb {
+    width: 140pt;
+    padding: 6pt 12pt;
+    margin: 8pt 0;
+    background-color: var(--main-bgcolor);
+    border: 2pt solid var(--primary-acc-medium);
+    text-align: center;
+    font-family: monospace;
+    color: var(--text-primary);
+}
+
+#macaddr-tb:focus {
+    border: 2pt solid var(--primary-acc-light);
+    outline: none;
+}
+
+.main-box .lookup-btn {
+    margin-top: 8pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box .lookup-btn button {
+    background-color: var(--primary-acc-light);
+    border: 0px;
+    padding: 8pt 12pt;
+    width: 120pt;
+    font-family: monospace;
+    font-size: 14pt;
+    color: var(--text-primary);
+}
+
+.main-box .lookup-btn button:hover {
+    background-color: var(--primary-acc-medium);
+}
+
+.result-text {
+    width: 50%;
+    margin: auto;
+    vertical-align: middle;
+    position: relative;
+    max-width: 100%;
+    word-wrap: break-word;
+    font-family: monospace;
+    font-size: 14pt;
+    color: var(--text-primary);
+}

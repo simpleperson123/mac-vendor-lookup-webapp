@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Example</title>
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body id="main">
+        <h1 id="head-text">MAC vendor lookup</h1>
+        <h2 id="subhead-text">Lookup vendor by MAC range</h2>
+        <div class="main-box">
+            <div class="first-row">
+                <label>
+                    MAC address:
+                </label>
+                <input type="text" id="macaddr-tb" maxlength="17">
+            </div>
+            <div class="lookup-btn">
+                <button onclick="lookup()">Lookup</button>
+            </div>
+        </div>
+        <div class=result-text>
+            <p id="result-vendor-lbl"></p>
+        </div>
+    </body>
+</html>
