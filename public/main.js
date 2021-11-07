@@ -55,6 +55,9 @@ function onResponse() {
         else if(parsed.status === "notfound") {
             setResultText("MAC range not found in database");
         }
+        else if(this.status == 500) {
+            setResultText("Internal server error");
+        }
         else {
             setResultText("Error: " + parsed.msg);
         }
